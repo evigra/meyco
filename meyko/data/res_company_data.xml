@@ -5,7 +5,6 @@
         <field name="type">invoice</field>
         <field name="parent_id" ref="base.main_partner"/>
         <field name="street">Tegucigalpa</field>
-        <field name="state_id" ref="base.state_mx_df"/>
         <field name="country_id" ref="base.hn"/>
     </record>
 
@@ -13,8 +12,6 @@
         <field name="name">Grupo Mey-ko SA</field>
         <field name="street">Tegucigalpa</field>
         <field name="vat">0801900206281</field>
-        <field name="currency_id" ref="base.HNL"/>
-        <field name="state_id" ref="base.state_mx_df"/>
         <field name="country_id" ref="base.hn"/>
         <field name="logo" type="base64" file="meyko/static/img/logo.png"/>
     </record>
