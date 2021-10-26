@@ -1,6 +1,6 @@
-[![Build Status](https://git.vauxoo.com/vauxoo/meyko/badges/14.0/pipeline.svg)](https://git.vauxoo.com/vauxoo/meyko/pipelines)
-[![Coverage Report](https://git.vauxoo.com/vauxoo/meyko/badges/14.0/coverage.svg)](https://coverage.vauxoo.com/14-0-meyko)
-[![Runbot Status](http://runbot.vauxoo.com/runbot/badge/109/14.0.svg)](http://runbot.vauxoo.com/runbot/repo/git-git-vauxoo-com-vauxoo-meyko-git-109)
+[![Build Status](https://git.vauxoo.com/vauxoo/meyko/badges/15.0/pipeline.svg)](https://git.vauxoo.com/vauxoo/meyko/pipelines)
+[![Coverage Report](https://git.vauxoo.com/vauxoo/meyko/badges/15.0/coverage.svg)](https://coverage.vauxoo.com/15.0-meyko)
+[![Runbot Status](http://runbot.vauxoo.com/runbot/badge/109/15.0.svg)](http://runbot.vauxoo.com/runbot/repo/git-git-vauxoo-com-vauxoo-meyko-git-109)
 
 
 
@@ -77,15 +77,15 @@ Deploy locally to hack it
    command line:
 
     ```bash
-    $ t2d git@git.vauxoo.com:vauxoo/meyko.git 14.0
+    $ t2d git@git.vauxoo.com:vauxoo/meyko.git 15.0
     ```
 
     The result after run this t2d script will be a log that have a list of
     local paths, in meyko case, will have a list of 2 paths
 
     ```bash
-    ['${HOME}/t2d/script/git_git.vauxoo.com_vauxoo_meyko.git/14.0/3.8/env_1_job_1',
-     '${HOME}/t2d/script/git_git.vauxoo.com_vauxoo_meyko.git/14.0/3.8/env_2_job_1']
+    ['${HOME}/t2d/script/git_git.vauxoo.com_vauxoo_meyko.git/15.0/3.8/env_1_job_1',
+     '${HOME}/t2d/script/git_git.vauxoo.com_vauxoo_meyko.git/15.0/3.8/env_2_job_1']
     ```
 
     The first one /1 will reproduce the lint tests that are running by the CI,
@@ -102,8 +102,8 @@ Deploy locally to hack it
    add the next extra arguments.
 
     ```bash
-    ${HOME}/t2d/script/git_git.vauxoo.com_vauxoo_meyko.git/14.0/3.8/env_2_job_1/10-build.sh --no-cache
-    ${HOME}/t2d/script/git_git.vauxoo.com_vauxoo_meyko.git/14.0/3.8/env_2_job_1/20-run.sh --entrypoint=bash
+    ${HOME}/t2d/script/git_git.vauxoo.com_vauxoo_meyko.git/15.0/3.8/env_2_job_1/10-build.sh --no-cache
+    ${HOME}/t2d/script/git_git.vauxoo.com_vauxoo_meyko.git/15.0/3.8/env_2_job_1/20-run.sh --entrypoint=bash
     ```
 
 5. After the last script is finish you will notice that your prompt has change,
@@ -112,7 +112,7 @@ Deploy locally to hack it
 
     ```bash
     [odoo@a458896bf8f5]~/build/vauxoo/meyko$
-    (14.0) $
+    (15.0) $
     ```
 
     where a458896bf8f5 is your container id. Now you have access to the
@@ -143,7 +143,7 @@ Deploy locally to hack it
    using the next command:
 
     ```bash
-    $HOME/odoo-14.0/odoo-bin -d openerp_test --db-filter=openerp_test
+    $HOME/odoo-15.0/odoo-bin -d openerp_test --db-filter=openerp_test
     ```
 
 8. Last but not least, you will need to have more than one console view to your
